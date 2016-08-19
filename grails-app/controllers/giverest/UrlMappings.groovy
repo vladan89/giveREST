@@ -13,10 +13,10 @@ class UrlMappings {
         "500"(view:'/error')
         "404"(view:'/notFound')
 
-        "/gifts"(controller: "gift", action: "index", method: "GET")
-        "/gifts"(controller: "gift", action: "save", method: "POST")
-        "/gifts/$id"(controller: "gift", action: "update", method: "PUT")
-        "/gifts/$id"(controller: "gift", action: "patch", method: "PATCH")
-        "/gifts/$id"(controller: "gift", action: "delete", method: "DELETE")
+        "/categories"(resources:"category")
+        "/users"(resources:"user")
+        "/gifts"(resources:"gift") {
+            "/owner"(controller:"user", method:"GET")
+        }
     }
 }

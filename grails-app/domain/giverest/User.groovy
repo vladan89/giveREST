@@ -1,5 +1,8 @@
 package giverest
 
+import grails.rest.Resource
+
+@Resource(uri="/users", readOnly = false, formats = ["json", "xml"])
 class User {
 
     enum UserStatus {
@@ -17,7 +20,7 @@ class User {
         id generator: 'identity'
         firstName blank: false, nullable: false
         lastName blank: false, nullable: false
-        email blank: false, nullable: false, email: true
+        email blank: false, nullable: false, email: true, unique: true
         phone blank: false, nullable: false
         created nullable: false
     }

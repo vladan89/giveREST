@@ -9,13 +9,13 @@ import com.github.rahulsom.swaggydoc.SwaggyUpdate
 import com.wordnik.swagger.annotations.Api
 import com.wordnik.swagger.annotations.ApiOperation
 import grails.rest.RestfulController
-@Api(value = 'gift')
-class GiftController extends RestfulController {
+@Api(value = 'user')
+class UserController extends RestfulController {
 
     static responseFormats = ['json']
 
-    GiftController(){
-        super(Gift);
+    UserController() {
+        super(User)
     }
 
     @SwaggyList
@@ -48,4 +48,5 @@ class GiftController extends RestfulController {
     Object patch() {
         return super.patch()
     }
+
 }

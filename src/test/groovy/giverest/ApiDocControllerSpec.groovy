@@ -4,10 +4,10 @@ import grails.test.mixin.TestFor
 import spock.lang.Specification
 
 /**
- * See the API for {@link grails.test.mixin.domain.DomainClassUnitTestMixin} for usage instructions
+ * See the API for {@link grails.test.mixin.web.ControllerUnitTestMixin} for usage instructions
  */
-@TestFor(Gift)
-class GiftSpec extends Specification {
+@TestFor(ApiDocController)
+class ApiDocControllerSpec extends Specification {
 
     def setup() {
     }
@@ -17,6 +17,6 @@ class GiftSpec extends Specification {
 
     void "test something"() {
         expect:"fix me"
-            true == true
+            true == false
     }
 }

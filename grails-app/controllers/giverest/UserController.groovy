@@ -1,14 +1,9 @@
 package giverest
 
-import com.github.rahulsom.swaggydoc.SwaggyDelete
-import com.github.rahulsom.swaggydoc.SwaggyList
-import com.github.rahulsom.swaggydoc.SwaggyPatch
-import com.github.rahulsom.swaggydoc.SwaggySave
-import com.github.rahulsom.swaggydoc.SwaggyShow
-import com.github.rahulsom.swaggydoc.SwaggyUpdate
+import com.github.rahulsom.swaggydoc.*
 import com.wordnik.swagger.annotations.Api
-import com.wordnik.swagger.annotations.ApiOperation
 import grails.rest.RestfulController
+
 @Api(value = 'user')
 class UserController extends RestfulController {
 
